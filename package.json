@@ -1,10 +1,19 @@
 {
   "private": true,
-  "workspaces": ["ohm-js", "examples/ecmascript", "examples/es-module", "examples/operators", "examples/simple-lisp"],
+  "workspaces": [
+    "ohm-js",
+    "examples/ecmascript",
+    "examples/es-module",
+    "examples/operators",
+    "examples/simple-lisp"
+  ],
   "scripts": {
     "build": "yarn workspace ohm-js run build",
     "ci-test": "yarn lint && yarn test",
     "lint": "eslint .",
     "test": "yarn workspaces run test"
+  },
+  "dependencies": {
+    "ohm-js": "https://gitpkg.now.sh/moonlight-labs/ohm/ohm-js?9407eb"
   }
 }

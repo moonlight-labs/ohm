@@ -1,6 +1,6 @@
 // export = ohm;
 
-export default namespace ohm {
+export default class ohm {
 
   /**
    * Instantiate the Grammar defined by source. If specified, namespace is
